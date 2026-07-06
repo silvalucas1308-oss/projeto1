@@ -51,16 +51,26 @@
             <p>Bem-vindo à sua nova jornada no basquete. Conectamos conhecimento técnico e paixão pelo jogo para
                 transformar a sua visão sobre o esporte.</p>
                 <button>  ❤️   <span>0</span></button>
+                 <button>  👍​   <span>0</span></button>
         </div>
         <main>
 </body>
 <script>
-const botao = document.querySelector(buttn);
-botao.addEventListenner("click",botaoClicado);
+const botoes = document.querySelectorAll(buttn);
 
-function botaoClicado(){
-    console.log("fui clicado")
-}
+
+botoes.forEach(forction(botao){
+    botao.addEventListenner("click",botaoClicado);
+    function botaoClicado(){
+        console.log("fui clicado")
+        let texto = botao.querySelector("span")
+        texto.textConten++;
+    
+    }
+
+})
+
+
 
 </script>
 </html>
