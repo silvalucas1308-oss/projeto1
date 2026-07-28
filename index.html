@@ -65,7 +65,7 @@
             <img src="imagem basquete.png"
                 alt="JOGADOR DE BASQUETE EM MOVIMENTO, SALTANDA EM DIREÇÃO À CESTA PARA FAZER UMA ENTERRADA DURANTE EMU PARTIDA EMOCIONANTE.">
             <div>
-                <h2>primeira aula</h2>
+                <h2>segunda aula</h2>
                 <p class="artigo-artor">por:lucas Emanuel</p>
                 <p>Bem-vindo à sua nova jornada no basquete. Conectamos conhecimento técnico e paixão pelo jogo para
                     transformar a sua visão sobre o esporte.</p>
@@ -80,11 +80,19 @@
 
 
     botoes.forEach( function(botao) {
+        let curtiu = false;
       botao.addEventListener ("click",botaoClicado);   
 function botaoClicado(){ 
 console.log("fui Clicado ");
 let texto = botao.querySelector("span");
-texto.textContent++;
+if (curtiu === false){
+    texto.textContent++;
+curtiu = true;
+}else{ 
+    texto.textContent--;
+    curtiu == false;
+}
+
 }
 
 
